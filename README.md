@@ -11,6 +11,7 @@ As part of a university project, the goal of this application was to create a we
 - Local storage where the user can find their rockets
 - Different types of user inputs
 
+
 **Inputs**
 
 To achieve this goal, the first page allows users to set values such as weight, length, payload height, and number of boosters. A preview illustration dynamically adjusts to show how the rocket might look, using SVGs that update according to the input fields.

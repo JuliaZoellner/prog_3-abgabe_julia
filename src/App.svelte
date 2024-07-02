@@ -10,6 +10,7 @@
         "/input": Input,
         "/story": Story,
         "/store": Store,
+        
     };
 </script>
 

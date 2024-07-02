@@ -15,12 +15,7 @@
 
     .story-text {
         color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        max-width: 50rem;
-    }
 
-    .text-container {
-        margin: 20px;
+        max-width: 50rem;
     }
 </style>

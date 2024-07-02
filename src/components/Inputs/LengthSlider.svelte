@@ -62,4 +62,61 @@
         opacity: 0.3;
         font-family: "socialmono", monospace;
     }
+
+    @media (max-width: 1024px) {
+        .sliderWrapper {
+            padding: 15px;
+        }
+
+        input[type="range"] {
+            height: 7px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            width: 22px;
+            height: 22px;
+        }
+
+        .input-label {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sliderWrapper {
+            padding: 10px;
+        }
+
+        input[type="range"] {
+            height: 6px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            width: 20px;
+            height: 20px;
+        }
+
+        .input-label {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sliderWrapper {
+            padding: 5px;
+        }
+
+        input[type="range"] {
+            height: 4px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            width: 16px;
+            height: 16px;
+        }
+
+        .input-label {
+            font-size: 0.8rem;
+        }
+    }
 </style>

@@ -11,7 +11,7 @@
             <h1>This is no Rocket Science</h1>
             <div class="text-container">
                 <StoryText
-                    text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}
+                    text={"You might think building a rocket is difficult. Think again! This website makes it possible. Create a rocket in the simplest way imaginable and see how a mission could look like."}
                 />
             </div>
             <div class="buttonWrapper">
@@ -81,9 +81,6 @@
         margin-bottom: 1rem;
     }
 
-    .text-container {
-    }
-
     .buttonWrapper {
         display: flex;
         justify-content: flex-end;
@@ -116,7 +113,7 @@
 
         .svg-overlay {
             display: none;
-            position: center;
+            position: static;
             transform: none;
             width: 100%;
             height: auto;
