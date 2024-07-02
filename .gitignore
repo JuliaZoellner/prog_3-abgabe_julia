@@ -14,4 +14,6 @@ explorations
 node_modules
 temp
 
+.env
+
 .eslintcache
