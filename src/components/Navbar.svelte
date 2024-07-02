@@ -17,8 +17,8 @@
 <nav class="navbar">
     <div class="logo" on:click={navigateToHome}>Julias Rocket Lab</div>
     <div class="nav">
-        <div on:click={navigateToInput}>Rakete Erstellen</div>
-        <div on:click={navigateToStore}>Meine Raketen</div>
+        <div on:click={navigateToInput}>create rockets</div>
+        <div on:click={navigateToStore}>my rockets</div>
     </div>
 </nav>
 

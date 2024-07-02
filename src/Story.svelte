@@ -25,7 +25,7 @@
         const openai = new OpenAI(config);
 
         try {
-            const prompt = `Erfinde einen einzigartigen und kreativen Namen für eine Rakete. Nur  bis zu 4 Wörter. Die Rakete hat folgende Eigenschaften:
+            const prompt = `Erfinde einen einzigartigen und kreativen Namen für eine Rakete. Nur  bis zu 4 Wörter. In Englisch. Die Rakete hat folgende Eigenschaften:
             Länge: ${$length}
             Höhe: ${$height}
             Booster: ${$booster}
@@ -61,7 +61,7 @@
             Höhe: ${$height}
             Booster: ${$booster}
             Nutzlast: ${$payload}
-            Die Geschichte sollte etwa 500 Zeichen lang sein. Erzähle auf eine lustige Art und Weise, wie weit die Rakete fliegen würde.`;
+            Die Geschichte sollte etwa 500 Zeichen lang sein. Erzähle auf eine lustige Art und Weise, wie weit die Rakete fliegen würde. In Englisch`;
 
             const response = await openai.chat.completions.create({
                 model: "gpt-3.5-turbo",
@@ -89,12 +89,14 @@
         try {
             isGenatingImage = true;
 
-            const prompt = `Create an illustration of a rocket. It should look like a hand drawing of a rocket with these values:
+            const prompt = `The image should show a more realistic picture of a rocket with the following specifications:
             Länge: ${$length}
             Höhe: ${$height}
             Booster: ${$booster}
             Nutzlast: ${$payload}. 
-            The rocket should be flying in the sky and have a unique design.`;
+           Plane colorfull background, blue or green. only one color.
+Ensure the overall aesthetic has a retro, 80s-inspired vibe with a modern twist. Show only One rocket and teh clean background. No other informations.
+            `;
 
             const response = await openai.images.generate({
                 model: "dall-e-3",
@@ -196,6 +198,9 @@
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .button-container {
